@@ -1,0 +1,15 @@
+.app-wraper {
+     margin: 0 auto; /*выраняли по середине весь сайт*/
+     display: grid;
+     width: 1000px;/*вся ширина такая сайт*/
+
+     grid-template-areas: 
+     "h h"
+     "n c";
+
+     grid-template-rows: 60px 1fr; /*строк всего 2. первая 60 пикселей(хедер) и 1 фракция (все остальное)*/
+     grid-template-columns: 2fr 10fr; /*сколько колонок занимает каждая часть. всего 12 частей*/
+     /*row-gap: 10px;*/
+}
+
+
