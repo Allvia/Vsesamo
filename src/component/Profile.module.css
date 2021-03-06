@@ -4,3 +4,7 @@
     grid-area: c;
     background-color: lightblue;
 }
+
+.item {
+    color: blue;
+}
