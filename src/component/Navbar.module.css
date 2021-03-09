@@ -6,8 +6,8 @@
 }
 
 .item {
-    color: rgb(243, 247, 250);
+    color: rgb(6, 0, 87);
 }
 .item.active {
-    color: blueviolet;
+    color: white;
 }
