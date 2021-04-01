@@ -1,33 +1,34 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import s from './Navbar.module.css';
-console.log (s);
+console.log(s);
 
-//let c1 = "item";
-//let c2 = "active";
-//let classesNew = '${s.item} ${c2}';
+
 
 const Navbar = () => {
-    return (<nav className ={s.nav}>
-            <div className = {s.item}>
-                <a>Profile</a>
-            </div>
+    return (<nav className={s.nav}>
+        <div className={s.item}>
+            <NavLink  to ="/profile" activeClassName = {s.activeLink}>Profile</NavLink>
+        </div>
 
-            <div className = {`${s.item} ${s.active}`}>
-                <a>Messeger</a>
-            </div>
+        <div className={`${s.item} ${s.active}`}>
+            <NavLink to="/Dialoge" activeClassName = {s.activeLink}>Messeger</NavLink>
+        </div>
 
-            <div className = {s.item}>
-                <a>News</a>
-            </div>
+        <div className={s.item}>
+            <NavLink to="/news" activeClassName = {s.activeLink}>News</NavLink>
 
-            <div className = {s.item}>
-                <a> Music</a>
-            </div>
-            <div className = {s.item}>
-                <a>Profile</a>
-            </div>
+        </div>
 
-        </nav>
+        <div className={s.item}>
+            <NavLink to='/music'activeClassName = {s.activeLink}> Music</NavLink>
+        </div>
+        <div className={s.item}>
+            <NavLink to='/setting'activeClassName = {s.activeLink}> Setting </NavLink>
+        </div>
+
+
+    </nav>
     )
 
 }

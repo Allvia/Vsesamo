@@ -1,5 +1,18 @@
 
-.content   {
-    grid-area: c;
-    background-color: lightblue;
+.dialoges {
+
+display: grid; /*всяя сраница диалогов является гридом*/
+grid-template-columns: 2fr 10fr; /*вся страница диалогов делится на 2 столбца*/
+
+}
+
+.dialogeItem{
+    padding: 10px; /*отступ от края на 10 пикс */
+}
+
+.dialogeItem .active {
+    color: goldenrod;
+}
+.messenges {
+    padding: 10px;
 }
