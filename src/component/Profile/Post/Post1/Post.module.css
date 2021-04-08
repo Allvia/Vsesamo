@@ -1,6 +1,6 @@
 .content   {
     grid-area: c;
-    background-color: rgb(1, 81, 107);
+    background-color: rgba(192, 232, 245, 0.973);
 }
 .item img {
     width: 50px;

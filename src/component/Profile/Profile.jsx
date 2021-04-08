@@ -7,14 +7,8 @@ import s from './Profile.module.css';
 const Profile = () => {
     return (
         <div>
-<ProfileInfo />
-           
-
-            <div>
-                My posts
-
-               <MyPosts />
-            </div>
+            <ProfileInfo />
+            <MyPosts />
 
         </div>
 

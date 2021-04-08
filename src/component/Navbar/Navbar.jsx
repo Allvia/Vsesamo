@@ -8,23 +8,23 @@ console.log(s);
 const Navbar = () => {
     return (<nav className={s.nav}>
         <div className={s.item}>
-            <NavLink  to ="/profile" activeClassName = {s.activeLink}>Profile</NavLink>
+            <NavLink to="/profile" activeClassName={s.activeLink}>Profile</NavLink>
         </div>
 
         <div className={`${s.item} ${s.active}`}>
-            <NavLink to="/Dialoge" activeClassName = {s.activeLink}>Messeger</NavLink>
+            <NavLink to="/Dialoge" activeClassName={s.activeLink}>Messeger</NavLink>
         </div>
 
         <div className={s.item}>
-            <NavLink to="/news" activeClassName = {s.activeLink}>News</NavLink>
-
+            <NavLink to="/news" activeClassName={s.activeLink}>News</NavLink>
         </div>
 
         <div className={s.item}>
-            <NavLink to='/music'activeClassName = {s.activeLink}> Music</NavLink>
+            <NavLink to='/music' activeClassName={s.activeLink}> Music</NavLink>
         </div>
+        
         <div className={s.item}>
-            <NavLink to='/setting'activeClassName = {s.activeLink}> Setting </NavLink>
+            <NavLink to='/setting' activeClassName={s.activeLink}> Setting </NavLink>
         </div>
 
 

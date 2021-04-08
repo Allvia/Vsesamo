@@ -19,13 +19,11 @@ const App = () => {
 
         <Header />
         <Navbar />
-
-
         <div className='app-wraper-content'>
           <Route path='/dialoge' component={Dialoge} />
           <Route path='/profile' component={Profile} />
-
-
+        
+                
         </div>
       </div>
     </BrowserRouter>

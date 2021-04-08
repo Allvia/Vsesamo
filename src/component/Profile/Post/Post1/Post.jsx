@@ -11,7 +11,7 @@ const Post = (props) => {
 
 
             <div className={s.item}>
-                <img src='https://instagram-my.ru/wp-content/uploads/2019/12/ava-for-insta02.jpg' />
+                <img src='https://i.pinimg.com/736x/4a/bc/c0/4abcc00427dbb86ee5da8270b52204f8.jpg' />
                 {props.message}
                     <div>
                     <span> Like </span> {props.likesCount }                   
