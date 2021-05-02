@@ -18,9 +18,10 @@ const MyPosts = (props) => {
 
             <h3> My post  </h3>
             <div>
-                <div>
+
+                 <div>
                     <textarea>   </textarea>
-            </div>
+                 </div>
 
                 <button> Add post </button>
 

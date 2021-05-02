@@ -15,6 +15,7 @@ import { BrowserRouter } from 'react-router-dom';
 const App = () => {
   return (
     <BrowserRouter>
+
       <div className='app-wraper'>
 
         <Header />
@@ -22,8 +23,8 @@ const App = () => {
         <div className='app-wraper-content'>
           <Route path='/dialoge' component={Dialoge} />
           <Route path='/profile' component={Profile} />
-        
-                
+
+
         </div>
       </div>
     </BrowserRouter>

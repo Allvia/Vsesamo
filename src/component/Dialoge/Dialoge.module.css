@@ -13,6 +13,7 @@ grid-template-columns: 2fr 10fr; /*вся страница диалогов де
 .dialogeItem .active {
     color: goldenrod;
 }
-.messenges {
+.messenges .messenges {
     padding: 10px;
+    color: aliceblue;
 }
