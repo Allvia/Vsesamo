@@ -12,7 +12,10 @@ import { BrowserRouter } from 'react-router-dom';
 
 
 
-const App = () => {
+
+const App = (props) => {
+
+
   return (
     <BrowserRouter>
 
@@ -21,8 +24,18 @@ const App = () => {
         <Header />
         <Navbar />
         <div className='app-wraper-content'>
-          <Route path='/dialoge' component={Dialoge} />
-          <Route path='/profile' component={Profile} />
+
+
+
+          <Route path='/dialoge'
+           render={ ( ) => <Dialoge 
+           state = {props.state.dialogsState} 
+             />} />
+
+          <Route path='/profile' 
+          render = {() => <Profile 
+          state = {props.state.profilePage} />} />
+          
 
 
         </div>
