@@ -9,7 +9,13 @@ const MyPosts = (props) => {
     //     { id: 1, message: 'Haw are you?', likesCount: 31 },
     //     { id: 2, message: 'Be yourself?', likesCount: 22 }
     // ]
+ 
+let newPostElement = React.createRef ();
 
+let addPost = () => {
+    let text = newPostElement.current.value
+    alert(' ');
+}
     let postsElements =
         props.posts.map(p => < Post message={p.message} likesCount={p.likesCount} />)
 
@@ -20,10 +26,10 @@ const MyPosts = (props) => {
             <div>
 
                  <div>
-                    <textarea>   </textarea>
+                    <textarea ref={newPostElement}>   </textarea>
                  </div>
 
-                <button> Add post </button>
+                <button onClick={addPost}>  Add post </button>
 
             </div>
 

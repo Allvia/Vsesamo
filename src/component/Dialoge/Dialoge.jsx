@@ -13,6 +13,7 @@ const Dialoge = (props) => {
     let messagesElements =
         props.state.Messages.map(m => <Message message={m.message} id={m.id} />)
 
+ 
     return (
         <div className={s.dialoges}>
             <div className={s.DialogItem}>
@@ -21,6 +22,7 @@ const Dialoge = (props) => {
 
             <div className={s.Message}>
                 {messagesElements}
+
 
                 {/* <Message message={MessagesData[0].message} id={MessagesData[0].id} />
                 <Message message={MessagesData[1].message} id={MessagesData[1].id} />
