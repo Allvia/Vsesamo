@@ -5,11 +5,11 @@ const ProfileInfo = (props) => {
 
     return ( <div> 
 <div>
-                <img src='https://i2.rozetka.ua/goods/14195475/125537191_images_14195475794.jpg' />
+                <img src='https://i1.7fon.org/thumb/g548921.jpg' />
             </div>
 
             <div className = {s.description}>
-            ava + description
+             
             </div>
             </div>
     )

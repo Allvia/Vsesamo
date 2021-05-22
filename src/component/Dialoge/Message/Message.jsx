@@ -7,8 +7,8 @@ const Message = (props) => {
 let windowMessang = React.createRef ()
 
 let addText = ()=>{
-     
-    alert ( " ");
+    let textMess = windowMessang.current.value
+    alert ( textMess );
 
 }
 

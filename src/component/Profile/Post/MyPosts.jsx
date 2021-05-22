@@ -5,19 +5,15 @@ import Post from './Post1/Post';
 
 const MyPosts = (props) => {
 
-    // let posts = [
-    //     { id: 1, message: 'Haw are you?', likesCount: 31 },
-    //     { id: 2, message: 'Be yourself?', likesCount: 22 }
-    // ]
- 
 let newPostElement = React.createRef ();
 
 let addPost = () => {
-    let text = newPostElement.current.value
-    alert(' ');
+   
+    let text = newPostElement.current.value;
+    props.addPost (text)
 }
     let postsElements =
-        props.posts.map(p => < Post message={p.message} likesCount={p.likesCount} />)
+        props.posts.map (p => < Post message={p.message} likesCount={p.likesCount} />)
 
     return (
         <div className={s.postblok}>
