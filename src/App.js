@@ -10,9 +10,6 @@ import { Route, Router } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 
 
-
-
-
 const App = (props) => {
 
   return (
